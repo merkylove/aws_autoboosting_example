@@ -1,0 +1,98 @@
+# Mac Os files
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+.python-version
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports / profiling reports
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache
+htmlcov/
+prof/
+
+# Translations
+*.pot
+
+# Logs:
+*.log
+
+# dotenv
+.env
+
+# IDEA project settings
+.idea
+
+# MyPy
+.mypy_cache
+
+# Ubuntu backup files
+*~
+\#*
+
+# VS Code
+.vscode/
+
+# ipynb
+*.ipynb_checkpoints
+
+# MyPy
+.mypy_cache
+
+# Distribution / packaging
+.Python
+venv/
+.venv/
+env/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+.python-version
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports / profiling reports
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache
+htmlcov/
+prof/

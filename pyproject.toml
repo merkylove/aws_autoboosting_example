@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "autoboosting"
+version = "0.1.0"
+description = "Autoboosting"
+authors = ["merkylove <merkylovecom@mail.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+scikit-learn = "^0.21.3"
+pandas = "^1.0"
+lightgbm = "^2.3.1"
+bayesian-optimization = "^1.0"
+
+[tool.poetry.dev-dependencies]
+black = { version = "19.10b0", allow-prereleases = true }
+flake8 = "^3.7.9"
+flake8-bugbear = "^20.1.2"
+isort = { version = "^4.3.21", extras = ["pyproject"] }
+mypy="^0.761"
+pytest = "~5.0"
+pytest-cov = "^2.7"
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.venv
+  | \.vscode
+  | venv
+)/
+'''
+
+[tool.isort]
+combine_as_imports = true
+default_section = "LOCALFOLDER"
+force_grid_wrap = false
+include_trailing_comma = true
+known_first_party = "src"
+known_standard_library = ""
+known_third_party = ""
+multi_line_output = 3
+not_skip = "__init__.py"
+line_length = 88
+sections = "FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+skip = """
+  .eggs,
+  venv,
+  .venv,
+"""
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
