@@ -97,10 +97,6 @@ class LightGBMWrapper:
         self.model = None
 
     def fit(self, X: pd.DataFrame, y: np.array) -> None:
-        """
-        Note: according to sklearn conventions .fit returns self but in
-        this takehome they require to return None
-        """
 
         self.reset_state()
 
@@ -181,8 +177,6 @@ class LightGBMWrapper:
         y_hat = self.model.predict(X[list(self.columns)])
 
         # for binary classification
-        # cast to format expected by Datadog requirement
-        # (refer to p.3, example output)
         if len(y_hat.shape) == 1:
             y_hat = np.array([y_hat, 1.0 - y_hat]).T
 
